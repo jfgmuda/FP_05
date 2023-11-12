@@ -34,7 +34,7 @@ function showPrimes(primes) {
     resultDiv.style.display = 'block';
 
     if (primes.length > 0) {
-        resultDiv.innerHTML = "<p> Números primes: " + primes.join(", ") + "</p>";
+        resultDiv.innerHTML = "<p> Números primos: " + primes.join(", ") + "</p>";
     } else {
         resultDiv.innerHTML = "<p> No hay números primes en el rango especificado.</p>";
     }
