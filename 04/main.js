@@ -21,12 +21,10 @@ function generatePrimes() {
 }
 
 function isPrime(number) {
-    var j = 2;
-    while (j < number) {
+    for (var j = 2; j < number; j++) {
         if (number % j === 0) {
             return false;
         }
-        j++;
     }
     return number !== 1;
 }
