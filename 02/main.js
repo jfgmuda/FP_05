@@ -10,9 +10,13 @@ function calculateFactorial() {
 
     // Calcular el factorial
     var factorial = 1;
-    for (var i = 1; i <= number; i++) {
+    var i = 1;
+
+    // Bucle do-while para calcular el factorial
+    do {
         factorial *= i;
-    }
+        i++;
+    } while (i <= number);
 
     // Mostrar el resultado en la página
     showResults(factorial);

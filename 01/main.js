@@ -15,22 +15,28 @@ function generateLists() {
     var oddDescendent = [];
 
     // Lista ascendente
-    for (var i = Math.min(number1, number2); i <= Math.max(number1, number2); i++) {
+    var i = Math.min(number1, number2);
+    while (i <= Math.max(number1, number2)) {
         ascendent.push(i);
+        i++;
     }
 
     // Lista de números pares descendente
-    for (var j = Math.max(number1, number2); j >= Math.min(number1, number2); j--) {
+    var j = Math.max(number1, number2);
+    while (j >= Math.min(number1, number2)) {
         if (j % 2 === 0) {
             evenDescendent.push(j);
         }
+        j--;
     }
 
     // Lista de números impares descendente
-    for (var k = Math.max(number1, number2); k >= Math.min(number1, number2); k--) {
+    var k = Math.max(number1, number2);
+    while (k >= Math.min(number1, number2)) {
         if (k % 2 !== 0) {
             oddDescendent.push(k);
         }
+        k--;
     }
 
     // Mostrar los resultados en la página
